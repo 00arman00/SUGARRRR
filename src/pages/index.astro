@@ -30,6 +30,7 @@ const links = await Astro.glob("./links/*.md");
                         links.map((link) => (
                             <Link
                                 emoji={link.frontmatter.emoji}
+                                fontAwesomeClass={link.frontmatter.fontAwesomeClass}
                                 title={link.frontmatter.title}
                                 href={link.frontmatter.href}
                             />
